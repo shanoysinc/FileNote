@@ -1,3 +1,92 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar-brand {
+  color: white !important;
+}
+
+.nav li a {
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.nav li a:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.navbar {
+  background-color: #44d0e8 !important;
+  border: 0 !important;
+  text-transform: uppercase !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+.jumbotron {
+  margin-top: -12px;
+  display: flex;
+  align-items: center;
+  background-image: url(asset-path('image1'));
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  -webkit-align-items: flex-end;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  width: 100%;
+}
+
+// margin-top: -30px !important;
+.secondjumbo {
+  margin-top: 80px;
+  text-align: center;
+  color: grey;
+}
+
+.secondjumbo p {
+  font-size: 20px;
+}
+
+ .thirdjumbo {
+  margin-top: 100px;
+  display: flex;
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 400px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  -webkit-align-items: flex-end;
+  color: grey;
+}
+
+
+.marginb {
+  margin-bottom: 120px !important;
+}
+
+.btn-primary {
+  background-color: #44d0e8 !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: #00b9f1 !important;
+}

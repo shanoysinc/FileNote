@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
-  root 'docs#index'
+  devise_for :users  do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+end
 
   get 'docs/edit'
 
@@ -8,9 +9,13 @@ Rails.application.routes.draw do
 
   get 'docs/new'
 
-  #root 'welcome#index'
-
   resources :docs
+  authenticated :user do
+    root 'docs#index', as: "authenticated_root"
+  end
+
+  root 'welcome#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
