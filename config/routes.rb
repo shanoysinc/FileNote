@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'docs/index'
+  devise_for :users
+  root 'docs#index'
 
   get 'docs/edit'
 
@@ -7,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'docs/new'
 
-  root 'welcome#index'
+  #root 'welcome#index'
 
   resources :docs
 
