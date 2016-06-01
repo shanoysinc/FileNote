@@ -1,9 +1,12 @@
-<h1>
+<div class="container containerize">
+<h1 class="text-center text-header">
   <%= @doc.title %>
 </h1>
-<p>
-  <%= simple_format(@doc.content) %>
+<p >
+  <%= simple_format(@doc.content, class: "text-paragraph") %>
 </p>
-
-<%= link_to 'Edit', edit_doc_path(@doc) %>
-<%= link_to 'Delete', doc_path(@doc), method: :delete, data: { confirm: 'Are you sure?'} %>
+<div class="col-md-12 center-block text-center">
+<%= link_to 'Edit', edit_doc_path(@doc), class: 'btn btn-primary' %>
+<%= link_to 'Delete', doc_path(@doc), method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-warning' %>
+</div>
+</div>

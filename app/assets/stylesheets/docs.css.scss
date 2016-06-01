@@ -1,3 +1,36 @@
 // Place all the styles related to the docs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.containerize {
+  margin-top: 50px;
+}
+
+.box {
+  margin-top: 50px !important;
+}
+
+
+.panel-heading {
+  background-color: #44d0e8 !important;
+  color: white !important;
+  font-size: 20px;
+  font-weight: bold ;
+}
+
+body {
+  background-color: #EFFFE9 !important;
+}
+.decorate:hover {
+    text-decoration:none !important;
+}
+
+.decorate .panel-body {
+  color: grey !important;
+}
+
+.text-header {
+  font-size: 50px;
+}
+.text-paragraph {
+  font-size: 18px;
+}

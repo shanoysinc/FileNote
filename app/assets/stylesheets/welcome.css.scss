@@ -6,17 +6,17 @@
   color: white !important;
 }
 
-.nav li a {
+.nav li .header-name {
   color: white !important;
 }
 
 .navbar-brand:hover {
-  color: black !important;
+  color: #44d0e8 !important;
   background-color: white !important;
 }
 
-.nav li a:hover {
-  color: black !important;
+.nav li .header-name:hover {
+  color: #44d0e8 !important;
   background-color: white !important;
 }
 
@@ -70,7 +70,9 @@ section .row img {
   margin-top: 100px;
   display: flex;
   text-align: center;
-  background-color: #f4f4f4;
+  background-image: url(asset-path('image2')) ;
+  background-size: cover;
+  // background-color: #f4f4f4;
   height: 400px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
   -webkit-align-items: flex-end;

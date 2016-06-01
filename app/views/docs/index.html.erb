@@ -1,17 +1,12 @@
-<%= link_to 'sign_out', destroy_user_session_path, method: :delete %>
+<div class="container containerize">
 <% @docs.each do |doc| %>
-<h2>
-  <%= doc.title %>
-</h2>
-
-<p>
-  <%= time_ago_in_words(doc.created_at) %>
-</p>
-
-<p>
-  <%= truncate(doc.content, length:150) %>
-</p>
-
+<%= link_to doc, class: "decorate" do %>
+  <div class="panel-group box">
+    <div class="panel panel-default">
+      <div class="panel-heading text-center"><%= doc.title %></div>
+      <div class="panel-body"> <%= time_ago_in_words(doc.created_at) %><br> <%= truncate(doc.content, length:300) %></div>
+    </div>
+</div>
 <% end %>
-
-<%= link_to 'Create Doc', docs_new_path %>
+<% end %>
+</div>
